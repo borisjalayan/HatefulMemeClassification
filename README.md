@@ -126,14 +126,6 @@ hatefulmemes_v3/
 
 ## How to Run
 
-### 0. Full Pipeline (from scratch)
-
-```bash
-bash scripts/run_full.sh
-```
-
-Runs everything: environment setup, training, evaluation, prediction, and launches the web app.
-
 
 ### 1. Setup
 
@@ -222,6 +214,15 @@ bash scripts/run_app.sh
 ```
 
 Upload any meme image to get a classification with confidence score and extracted text.
+
+
+### Full Pipeline (from scratch)
+
+```bash
+bash scripts/run_full.sh
+```
+
+Runs everything: environment setup, training, evaluation, prediction, and launches the web app.
 
 
 ## OCR Pipeline
