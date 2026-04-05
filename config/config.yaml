@@ -1,0 +1,25 @@
+model:
+  clip_model: "openai/clip-vit-large-patch14"
+  clip_dim: 768
+  hidden: 256
+  num_heads: 4
+
+training:
+  batch_size: 32
+  lr: 0.0002
+  weight_decay: 0.01
+  epochs: 20
+  warmup_steps: 100
+  patience: 5
+  gradient_clip: 1.0
+  seed: 42
+
+data:
+  data_dir: "data"
+  train_file: "train.jsonl"
+  dev_file: "dev.jsonl"
+  test_file: "test.jsonl"
+
+inference:
+  threshold: 0.5
+  use_ocr: true

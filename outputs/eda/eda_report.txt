@@ -1,0 +1,74 @@
+Hateful Memes — Exploratory Data Analysis
+Output directory: /hatefulmemes_v3/outputs/eda
+
+======================================================================
+DATASET OVERVIEW
+======================================================================
+  train :  8,500 samples |  8,500 labelled |  8,500 with text
+  dev   :    500 samples |    500 labelled |    500 with text
+  test  :  1,000 samples |      0 labelled |  1,000 with text
+  TOTAL : 10,000
+
+======================================================================
+LABEL DISTRIBUTION
+======================================================================
+  train: not_hateful=5450  hateful=3050  ratio=35.9%  imbalance=1.79:1
+  dev: not_hateful=250  hateful=250  ratio=50.0%  imbalance=1.00:1
+
+======================================================================
+TEXT LENGTH ANALYSIS
+======================================================================
+  train: words  mean=11.7  median=10  min=1  max=70  |  chars  mean=62.1
+  dev: words  mean=10.2  median=9  min=1  max=42  |  chars  mean=54.3
+  test: words  mean=10.4  median=9  min=1  max=57  |  chars  mean=55.5
+
+======================================================================
+IMAGE DIMENSIONS
+======================================================================
+  Width:   mean=605  median=550  min=118  max=825
+  Height:  mean=521  median=524  min=183  max=818
+  Aspect:  mean=1.23  median=1.50
+
+======================================================================
+VOCABULARY ANALYSIS (train)
+======================================================================
+  Total tokens: 93,946   Unique: 8,871
+  Top 10 words: people(564), i'm(432), black(386), white(364), you're(361), it's(304), see(247), muslim(238), look(216), why(212)
+  Top hateful-leaning: nigger, word, niggers, akbar, ernie, christianity, allahu, negro, jews, third
+  Top non-hateful-leaning: pudding, strip, hillary, important, club, snort, meanwhile, sarsour, cortez, linda
+
+======================================================================
+TEXT OVERLAP BETWEEN SPLITS
+======================================================================
+  train ∩ dev: 103 overlapping texts (24.6% of smaller)
+  train ∩ test: 168 overlapping texts (20.3% of smaller)
+  dev ∩ test: 4 overlapping texts (1.0% of smaller)
+
+======================================================================
+SAMPLE MEMES
+======================================================================
+  Saved 2×6 sample meme grid
+
+======================================================================
+TEXT PATTERNS (train)
+======================================================================
+  Empty texts:         0 (0.0%)
+  Short (≤3 words):  397 (4.7%)
+  Long (>30 words):  149 (1.8%)
+  ALL CAPS:            0 (0.0%)
+  Contains URL:        0 (0.0%)
+  Contains #:         31 (0.4%)
+  Contains @:          6 (0.1%)
+  Questions (?):    1026 (12.1%)
+  Exclamations (!):  896 (10.5%)
+
+======================================================================
+TOP BIGRAMS (train)
+======================================================================
+  Top 10: when you're(109), white people(104), black people(90), i'm not(73), what do(50), white trash(50), look like(50), strip club(46), isis strip(45), meanwhile isis(44)
+
+======================================================================
+TEXT LENGTH vs LABEL (train)
+======================================================================
+  Not Hateful: mean=11.2  median=10  std=6.6
+  Hateful:     mean=12.8  median=11  std=7.3

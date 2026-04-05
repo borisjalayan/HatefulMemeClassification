@@ -1,0 +1,20 @@
+BASELINE: Logistic Regression on Frozen CLIP Embeddings
+============================================================
+
+CLIP Model: openai/clip-vit-large-patch14
+Feature dim: 1536 (image 768 + text 768)
+Classifier: LogisticRegression(C=1.0, class_weight='balanced')
+Training time: 2.4s
+
+TRAIN:  AUROC=0.8982  Acc=0.8113  F1=0.8018
+DEV:    AUROC=0.7155  Acc=0.6500  F1=0.6493
+
+Dev Classification Report:
+              precision    recall  f1-score   support
+
+ not_hateful       0.64      0.70      0.67       250
+     hateful       0.67      0.60      0.63       250
+
+    accuracy                           0.65       500
+   macro avg       0.65      0.65      0.65       500
+weighted avg       0.65      0.65      0.65       500
