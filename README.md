@@ -91,7 +91,7 @@ python -m src.baseline
 ## Project Structure
 
 ```
-hatefulmemes_v3/
+HatefulMemeClassification/
 ├── config/
 │   └── config.yaml              # All hyperparameters (single source of truth)
 ├── src/
@@ -131,7 +131,7 @@ hatefulmemes_v3/
 
 ```bash
 git clone <repo-url>
-cd hatefulmemes_v3
+cd HatefulMemeClassification
 pip install -r requirements.txt
 ```
 https://www.kaggle.com/datasets/parthplc/facebook-hateful-meme-dataset/data
