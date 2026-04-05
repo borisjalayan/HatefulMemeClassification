@@ -162,7 +162,6 @@ Saves results and confusion matrix to `outputs/`.
 
 ```bash
 bash scripts/train.sh
-# Training takes ~15 min/epoch on Mac M4 (MPS)
 ```
 
 
